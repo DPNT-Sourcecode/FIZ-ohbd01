@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class HelloSolutionTest {
 
     @Test
-    public void shouldReturnHelloJohnMessage(){
+    public void shouldReturnMessage(){
         // Given
         String name = "John";
 
@@ -18,16 +18,5 @@ public class HelloSolutionTest {
 
         // Then
         assertThat(message, is("Hello, John!"));
-    }
-
-    @Test
-    public void shouldReturnHelloWorldMessage(){
-        // Given
-
-        // When
-        String message = new HelloSolution().hello("Dave");
-
-        // Then
-        assertThat(message, is("Hello, world!"));
     }
 }
