@@ -12,7 +12,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void shouldReturnFizzBuzzOrNumber(){
-        
+
         // When //Then
         assertThat(classToTest.fizzBuzz(6), is("fizz"));
         assertThat(classToTest.fizzBuzz(10), is("buzz"));
