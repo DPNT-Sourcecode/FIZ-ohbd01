@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class HelloSolutionTest {
 
     @Test
-    public void shouldReturnAMesage(){
+    public void shouldReturnAMessage(){
         // Given
 
         // When
@@ -17,6 +17,6 @@ public class HelloSolutionTest {
         String message = new HelloSolution().hello(name);
 
         // Then
-        assertThat(message, is("Hello, world!"));
+        assertThat(message, is("Hello, World!"));
     }
 }
