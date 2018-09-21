@@ -17,6 +17,6 @@ public class HelloSolutionTest {
         String message = new HelloSolution().hello(name);
 
         // Then
-        assertThat(message, is("Hello " + name));
+        assertThat(message, is("Hello, world!"));
     }
 }
