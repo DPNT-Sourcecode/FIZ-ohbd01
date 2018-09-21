@@ -11,26 +11,12 @@ public class FizzBuzzSolutionTest {
     private FizzBuzzSolution classToTest = new FizzBuzzSolution();
 
     @Test
-    public void shouldReturnFizzGivenNumberMultipleOfThree(){
-        // Given
-        int number = 6;
-
-        // When
-        String actual = classToTest.fizzBuzz(number);
-
-        // Then
-        assertThat(actual, is("fizz"));
-    }
-
-    @Test
-    public void shouldReturnBuzzGivenNumberMultipleOfFive(){
-        // Given
-        int number = 10;
-
-        // When
-        String actual = classToTest.fizzBuzz(number);
-
-        // Then
-        assertThat(actual, is("buzz"));
+    public void shouldReturnFizzBuzzOrNumber(){
+        
+        // When //Then
+        assertThat(classToTest.fizzBuzz(6), is("fizz"));
+        assertThat(classToTest.fizzBuzz(10), is("buzz"));
+        assertThat(classToTest.fizzBuzz(15), is("fizz buzz"));
+        assertThat(classToTest.fizzBuzz(2), is("2"));
     }
 }
