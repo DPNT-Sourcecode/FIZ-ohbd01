@@ -22,5 +22,8 @@ public class FizzBuzzSolutionTest {
         assertThat(classToTest.fizzBuzz(11), is("deluxe"));
         assertThat(classToTest.fizzBuzz(22), is("deluxe"));
         assertThat(classToTest.fizzBuzz(111), is("deluxe"));
+        assertThat(classToTest.fizzBuzz(33), is("fizz deluxe"));
+        assertThat(classToTest.fizzBuzz(111), is("fizz deluxe"));
+        assertThat(classToTest.fizzBuzz(777), is("fizz deluxe"));
     }
 }
