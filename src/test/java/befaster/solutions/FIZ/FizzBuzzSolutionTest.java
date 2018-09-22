@@ -16,6 +16,7 @@ public class FizzBuzzSolutionTest {
         // When //Then
         assertThat(classToTest.fizzBuzz(6), is("fizz"));
         assertThat(classToTest.fizzBuzz(10), is("buzz"));
+        assertThat(classToTest.fizzBuzz(13), is("fizz"));
         assertThat(classToTest.fizzBuzz(35), is("fizz buzz"));
     }
 }
