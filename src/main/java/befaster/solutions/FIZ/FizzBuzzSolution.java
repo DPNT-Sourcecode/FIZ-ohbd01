@@ -7,7 +7,7 @@ public class FizzBuzzSolution {
         String numberAsString = String.valueOf(number);
 
         if (isFizzBuzzDeluxe(number)) {
-            return "fizz, buzz and deluxe";
+            return "deluxe";
         } else if (isFizzBuzz(number)) {
             return "fizz buzz";
         } else if (isBuzz(number)) {
@@ -41,7 +41,7 @@ public class FizzBuzzSolution {
     private boolean isFizzBuzzDeluxe(Integer number) {
         String numberAsString = String.valueOf(number);
 
-        if (isFizzBuzz(number) && number > 10) {
+        if (number > 10) {
             char[] chars = numberAsString.toCharArray();
             char first = chars[0];
 
