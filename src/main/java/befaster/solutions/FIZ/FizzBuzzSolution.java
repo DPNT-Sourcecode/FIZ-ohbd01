@@ -7,6 +7,9 @@ public class FizzBuzzSolution {
         String numberAsString = String.valueOf(number);
 
         if (isFizzBuzz(number)) {
+            if (isFizzBuzzDeluxe(number)) {
+                return "fizz buzz deluxe";
+            }
             return "fizz buzz";
         } else if (isBuzz(number)) {
             if (isFizzBuzzDeluxe(number)) {
