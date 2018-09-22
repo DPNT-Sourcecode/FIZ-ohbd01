@@ -18,14 +18,30 @@ public class FizzBuzzSolution {
             return "buzz";
         } else if (isFizz(number)) {
             if (isFizzBuzzDeluxe(number)) {
-                return "fizz deluxe";
+                if (isOddNumber(number)) {
+                    return "fake deluxe";
+                } else {
+                    return "fizz deluxe";
+                }
             }
             return "fizz";
+
         } else if (isFizzBuzzDeluxe(number)) {
-            return "deluxe";
+            if (isOddNumber(number)) {
+                return "fake deluxe";
+            } else {
+                return "deluxe";
+            }
         }
 
         return numberAsString;
+    }
+
+    private boolean isEvenNumber(Integer number) {
+        return number % 2 == 0;
+    }
+    private boolean isOddNumber(Integer number) {
+        return number % 2 == 1;
     }
 
     private boolean isFizzBuzz(Integer number) {
