@@ -6,14 +6,20 @@ public class FizzBuzzSolution {
 
         String numberAsString = String.valueOf(number);
 
-        if (isFizzBuzzDeluxe(number)) {
-            return "deluxe";
-        } else if (isFizzBuzz(number)) {
+        if (isFizzBuzz(number)) {
             return "fizz buzz";
         } else if (isBuzz(number)) {
+            if (isFizzBuzzDeluxe(number)) {
+                return "buzz deluxe";
+            }
             return "buzz";
         } else if (isFizz(number)) {
+            if (isFizzBuzzDeluxe(number)) {
+                return "fizz deluxe";
+            }
             return "fizz";
+        } else if (isFizzBuzzDeluxe(number)) {
+            return "deluxe";
         }
 
         return numberAsString;
