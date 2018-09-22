@@ -7,7 +7,7 @@ public class FizzBuzzSolution {
         String numberAsString = String.valueOf(number);
 
         if (isFizzBuzz(number)) {
-            if (isFizzBuzzDeluxe(number)) {
+            if (isDeluxe(number)) {
                 if (isOddNumber(number)) {
                     return "fizz buzz fake deluxe";
                 }
@@ -15,7 +15,7 @@ public class FizzBuzzSolution {
             }
             return "fizz buzz";
         } else if (isBuzz(number)) {
-            if (isFizzBuzzDeluxe(number)) {
+            if (isDeluxe(number)) {
                 if (isOddNumber(number)) {
                     return "buzz fake deluxe";
                 }
@@ -23,14 +23,15 @@ public class FizzBuzzSolution {
             }
             return "buzz";
         } else if (isFizz(number)) {
-
-            if (isOddNumber(number)) {
-                return "fizz fake deluxe";
+            if (isDeluxe(number)) {
+                if (isOddNumber(number)) {
+                    return "fizz fake deluxe";
+                }
+                return "fizz deluxe";
             }
+            return "fizz";
 
-            return "fizz deluxe";
-
-        } else if (isFizzBuzzDeluxe(number)) {
+        } else if (isDeluxe(number)) {
             if (isOddNumber(number)) {
                 return "fake deluxe";
             } else {
@@ -68,19 +69,16 @@ public class FizzBuzzSolution {
         return fizzBuzz;
     }
 
-    private boolean isFizzBuzzDeluxe(Integer number) {
+    private boolean isDeluxe(Integer number) {
         String numberAsString = String.valueOf(number);
-
         if (number > 10) {
-            char[] chars = numberAsString.toCharArray();
-            char first = chars[0];
-
-            for (char aChar : chars) {
-                if (aChar != first) {
-                    return false;
-                }
+            if (numberAsString.contains("5") && number % 5 == 0) {
+                return true;
             }
-            return true;
+
+            if (numberAsString.contains("3") && number % 3 == 0) {
+                return true;
+            }
         }
         return false;
     }
