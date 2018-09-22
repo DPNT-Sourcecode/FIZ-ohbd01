@@ -14,7 +14,7 @@ public class FizzBuzzSolution {
                 return "fizz buzz deluxe";
             }
             return "fizz buzz";
-        } else if (isBuzz(number)) {
+        } else if (isBuzzDeluxe(number)) {
             if (isFizzBuzzDeluxe(number)) {
                 if (isOddNumber(number)) {
                     return "buzz fake deluxe";
@@ -22,14 +22,13 @@ public class FizzBuzzSolution {
                 return "buzz deluxe";
             }
             return "buzz";
-        } else if (isFizz(number)) {
-            if (isFizzBuzzDeluxe(number)) {
-                if (isOddNumber(number)) {
-                    return "fizz fake deluxe";
-                }
-                return "fizz deluxe";
+        } else if (isFizzDeluxe(number)) {
+
+            if (isOddNumber(number)) {
+                return "fizz fake deluxe";
             }
-            return "fizz";
+
+            return "fizz deluxe";
 
         } else if (isFizzBuzzDeluxe(number)) {
             if (isOddNumber(number)) {
@@ -86,7 +85,7 @@ public class FizzBuzzSolution {
         return false;
     }
 
-    private boolean isBuzz(Integer number) {
+    private boolean isBuzzDeluxe(Integer number) {
 
         String numberAsString = String.valueOf(number);
 
@@ -97,7 +96,7 @@ public class FizzBuzzSolution {
         return false;
     }
 
-    private boolean isFizz(Integer number) {
+    private boolean isFizzDeluxe(Integer number) {
 
         String numberAsString = String.valueOf(number);
 
