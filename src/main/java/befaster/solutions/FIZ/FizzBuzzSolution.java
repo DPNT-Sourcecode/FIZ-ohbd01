@@ -26,4 +26,24 @@ public class FizzBuzzSolution {
         return numberAsString;
     }
 
+    private boolean isFixx(Integer number) {
+
+        String numberAsString = String.valueOf(number);
+
+        if (numberAsString.contains("3") || number % 3 == 0) {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean isFizz(Integer number) {
+
+        String numberAsString = String.valueOf(number);
+
+        if (numberAsString.contains("3") || number % 3 == 0) {
+            return true;
+        }
+        return false;
+    }
+
 }
