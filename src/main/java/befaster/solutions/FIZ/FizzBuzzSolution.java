@@ -12,12 +12,12 @@ public class FizzBuzzSolution {
             return "fizz buzz";
         } else if (number % 3 == 0 || numberAsString.contains("3")) {
             if (numberAsString.contains("5")) {
-                return "fix buzz";
+                return "fizz buzz";
             }
             return "fizz";
         } else if (number % 5 == 0 || numberAsString.contains("5")) {
             if (numberAsString.contains("3")) {
-                return "fix buzz";
+                return "fizz buzz";
             }
             return "buzz";
         }
