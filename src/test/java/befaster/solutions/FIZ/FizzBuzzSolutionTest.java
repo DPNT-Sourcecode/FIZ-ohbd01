@@ -14,6 +14,8 @@ public class FizzBuzzSolutionTest {
     public void shouldReturnFizzBuzzOrNumber(){
 
         // When //Then
+        assertThat(classToTest.fizzBuzz(3), is("fizz fake deluxe"));
+        assertThat(classToTest.fizzBuzz(5), is("buzz fake deluxe"));
         assertThat(classToTest.fizzBuzz(6), is("fizz"));
         assertThat(classToTest.fizzBuzz(10), is("buzz"));
         assertThat(classToTest.fizzBuzz(36), is("fizz deluxe"));

@@ -71,7 +71,7 @@ public class FizzBuzzSolution {
 
     private boolean isDeluxe(Integer number) {
         String numberAsString = String.valueOf(number);
-        if (number > 10) {
+
             if (numberAsString.contains("5") && number % 5 == 0) {
                 return true;
             }
@@ -79,7 +79,7 @@ public class FizzBuzzSolution {
             if (numberAsString.contains("3") && number % 3 == 0) {
                 return true;
             }
-        }
+
         return false;
     }
 
