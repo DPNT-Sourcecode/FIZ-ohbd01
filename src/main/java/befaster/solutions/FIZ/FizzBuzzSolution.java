@@ -8,16 +8,25 @@ public class FizzBuzzSolution {
 
         if (isFizzBuzz(number)) {
             if (isFizzBuzzDeluxe(number)) {
+                if (isOddNumber(number)) {
+                    return "fizz buzz fake deluxe";
+                }
                 return "fizz buzz deluxe";
             }
             return "fizz buzz";
         } else if (isBuzz(number)) {
             if (isFizzBuzzDeluxe(number)) {
+                if (isOddNumber(number)) {
+                    return "buzz fake deluxe";
+                }
                 return "buzz deluxe";
             }
             return "buzz";
         } else if (isFizz(number)) {
             if (isFizzBuzzDeluxe(number)) {
+                if (isOddNumber(number)) {
+                    return "fizz fake deluxe";
+                }
                 return "fizz deluxe";
             }
             return "fizz";
