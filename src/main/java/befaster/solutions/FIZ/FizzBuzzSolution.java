@@ -18,11 +18,7 @@ public class FizzBuzzSolution {
             return "buzz";
         } else if (isFizz(number)) {
             if (isFizzBuzzDeluxe(number)) {
-                if (isOddNumber(number)) {
-                    return "fake deluxe";
-                } else {
-                    return "fizz deluxe";
-                }
+                return "fizz deluxe";
             }
             return "fizz";
 
@@ -40,6 +36,7 @@ public class FizzBuzzSolution {
     private boolean isEvenNumber(Integer number) {
         return number % 2 == 0;
     }
+
     private boolean isOddNumber(Integer number) {
         return number % 2 == 1;
     }

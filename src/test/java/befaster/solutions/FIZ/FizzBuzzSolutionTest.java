@@ -21,10 +21,11 @@ public class FizzBuzzSolutionTest {
         assertThat(classToTest.fizzBuzz(546), is("fizz buzz"));
         assertThat(classToTest.fizzBuzz(11), is("fake deluxe"));
         assertThat(classToTest.fizzBuzz(22), is("deluxe"));
-        assertThat(classToTest.fizzBuzz(111), is("fake deluxe"));
-        assertThat(classToTest.fizzBuzz(33), is("fake deluxe"));
-        assertThat(classToTest.fizzBuzz(777), is("fake deluxe"));
-        assertThat(classToTest.fizzBuzz(55), is("fake deluxe"));
-        assertThat(classToTest.fizzBuzz(555), is("fake deluxe"));
+        assertThat(classToTest.fizzBuzz(111), is("fizz deluxe"));
+        assertThat(classToTest.fizzBuzz(33), is("fizz deluxe"));
+        assertThat(classToTest.fizzBuzz(111), is("fizz deluxe"));
+        assertThat(classToTest.fizzBuzz(777), is("fizz deluxe"));
+        assertThat(classToTest.fizzBuzz(55), is("buzz deluxe"));
+        assertThat(classToTest.fizzBuzz(555), is("fizz buzz deluxe"));
     }
 }
